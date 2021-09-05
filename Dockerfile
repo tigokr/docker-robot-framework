@@ -48,6 +48,7 @@ ENV ROBOT_FRAMEWORK_VERSION 4.1
 ENV SELENIUM_LIBRARY_VERSION 5.1.3
 ENV SSH_LIBRARY_VERSION 3.7.0
 ENV XVFB_VERSION 1.20
+ENV APIUM_VERSION 1.6
 
 # By default, no reports are uploaded to AWS S3
 ENV AWS_UPLOAD_TO_S3 false
@@ -105,6 +106,7 @@ RUN apk update \
     robotframework-requests==$REQUESTS_VERSION \
     robotframework-seleniumlibrary==$SELENIUM_LIBRARY_VERSION \
     robotframework-sshlibrary==$SSH_LIBRARY_VERSION \
+    robotframework-appiumlibrary=$APIUM_VERSION \
     axe-selenium-python==$AXE_SELENIUM_LIBRARY_VERSION \
     PyYAML \
 
